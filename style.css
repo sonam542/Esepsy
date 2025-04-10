@@ -1,8 +1,10 @@
-body{
-
+body {
     font-size: 20px;
     background-color: beige;
+    margin: 0px;
+    
 }
+
 
 
 
@@ -10,8 +12,10 @@ nav{
     display: flex;
     justify-content: space-between;
     background-color: bisque;
+    margin-top: 0;
+    position:fixed;
+    width: 100%;
     padding: 10px;
-    
 
 }
 
@@ -42,12 +46,12 @@ a:hover  {
 #firstPage {
     display: flex;
     flex-direction: column;
-    
+    padding-top: 100px;
     align-items: center;
 
 }
 
-h1 h2 h3{
+h1, h2 ,h3{
     text-align: center;
 
 }
