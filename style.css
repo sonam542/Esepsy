@@ -1,68 +1,91 @@
+/* General styles */
 body {
     font-size: 20px;
     background-color: beige;
-    margin: 0px;
-    
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    padding-top: 80px; /* Account for fixed nav */
 }
 
-
-
-
-nav{
+/* Navigation bar */
+nav {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     background-color: bisque;
-    margin-top: 0;
-    position:fixed;
+    position: fixed;
     width: 100%;
-    padding: 10px;
-
+    top: 0;
+    left: 0;
+    padding: 15px 30px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    z-index: 1000;
 }
 
-#navRight{
+#navLeft p {
+    margin: 0;
+    font-weight: bold;
+}
+
+#navRight {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    gap: 20px;
 }
 
-.navContent{
-    text-decoration: none;
-    
-    margin-left: 10px;
-}
-
-a{
+.navContent a {
     text-decoration: none;
     color: black;
-    text-align: center;
+    font-weight: bold;
+    transition: color 0.3s, font-size 0.3s;
 }
-a:hover  {
+
+.navContent a:hover {
     color: blue;
-    font-size: 25px;
-
-
+    font-size: 22px;
 }
 
+/* Main content containers */
+.container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 0 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    padding: 10px;
+}
+
+/* Section headings */
+h1, h2, h3 {
+    text-align: center;
+    margin-top: 40px;
+}
+
+/* Responsive images */
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 20px auto;
+    border-radius: 8px;
+}
+
+/* First section alignment (optional) */
 #firstPage {
     display: flex;
     flex-direction: column;
-    padding-top: 100px;
     align-items: center;
-
 }
 
-h1, h2 ,h3{
-    text-align: center;
-
-}
-
-
-.container{
-    width: 700px;
-}
-
-#pageTwo{
+/* Second section alignment (optional) */
+#pageTwo {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+/* Citation padding */
+#citation {
+    padding-bottom: 50px;
 }
